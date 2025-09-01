@@ -7,19 +7,19 @@ Input: int*+ transactions = ,200, -150, 340, 500, -100-;
 using System; 
  
 class Program 
-, 
+ 
     static void Main() 
-    , 
+     
         int*+ transactions = ,200, -150, 340, 500, -100-; 
         int sum = 0; 
  
         for (int i = 0; i < transactions.Length; i++) 
-        , 
+         
             sum += transactions*i+; 
-        - 
+         
  
         Console.WriteLine("Total sum of transactions: " + sum); 
-    - - 
+    
  
  
 Question 2:-You are working on an analytics tool that needs to find the 
@@ -30,20 +30,20 @@ Input: float*+ scores = ,85.5f, 90.3f, 78.4f, 88.9f, 92.1f-;
 using System; 
  
 class Program 
-, 
+ 
     static void Main() 
-    , 
+     
         float*+ scores = ,85.5f, 90.3f, 78.4f, 88.9f, 92.1f-; 
         float sum = 0; 
  
         for (int i = 0; i < scores.Length; i++) 
-        , 
+         
             sum += scores*i+; 
-        - 
+         
  
         float average = sum / scores.Length; 
         Console.WriteLine("Average score: " + average); 
-    - - 
+    
  
  
  
@@ -61,22 +61,22 @@ Input: int*+ prices = ,1500, 2300, 999, 3200, 1750-;
 using System; 
  
 class Program 
-, 
+ 
     static void Main() 
-    , 
+     
         int*+ prices = ,1500, 2300, 999, 3200, 1750-; 
         int max = prices*0+; 
  
         for (int i = 1; i < prices.Length; i++) 
-        , 
+         
             if (prices*i+ > max) 
-            , 
+             
                 max = prices*i+; 
-            - 
-        - 
+             
+         
  
         Console.WriteLine("Most expensive item: " + max); 
-    - - 
+    
  
  
  
@@ -89,23 +89,23 @@ Input: int*+ participantCodes = ,102, 215, 324, 453, 536-;
 using System; 
  
 class Program 
-, 
+
     static void Main() 
-    , 
+     
         int*+ participantCodes = ,102, 215, 324, 453, 536-; 
         int maleCount = 0, femaleCount = 0; 
  
         for (int i = 0; i < participantCodes.Length; i++) 
-        , 
+         
             if (participantCodes*i+ % 2 == 0) 
                 maleCount++; 
             else 
                 femaleCount++; 
-        - 
+         
  
         Console.WriteLine("Male participants: " + maleCount); 
         Console.WriteLine("Female participants: " + femaleCount); 
-    - - 
+    
 Question 5:- You are building a feature for an app that displays the recent 
 search history in reverse order. Implement a C# program that reverses the 
 elements of an integer array using a loop. 
@@ -113,17 +113,17 @@ Input: int*+ searchHistory = ,101, 202, 303, 404, 505-;
 using System; 
  
 class Program 
-, 
+
     static void Main() 
-    , 
+     
         int*+ searchHistory = ,101, 202, 303, 404, 505-; 
  
         Console.WriteLine("Search history in reverse:"); 
         for (int i = searchHistory.Length - 1; i >= 0; i--) 
-        , 
+         
             Console.WriteLine(searchHistory*i+); 
-        - 
-    - - 
+         
+    
  
  
  
@@ -137,18 +137,18 @@ Input: int*+ measurements = ,2, 4, 6, 8-; int factor = 3;
 using System; 
  
 class Program 
-, 
+ 
     static void Main() 
-    , 
+     
         int*+ measurements = ,2, 4, 6, 8-; 
         int factor = 3; 
  
         Console.WriteLine("Adjusted measurements:"); 
         for (int i = 0; i < measurements.Length; i++) 
-        , 
+         
             Console.WriteLine(measurements*i+ * factor); 
-        - 
-    - - 
+         
+    
  
  
  
@@ -160,27 +160,26 @@ Input: int*+ bookCodes = ,101, 203, 304, 405, 506-; int searchCode = 304;
 using System; 
  
 class Program 
-, 
+ 
     static void Main() 
-    , 
+    
         int*+ bookCodes = ,101, 203, 304, 405, 506-; 
         int searchCode = 304; 
         int index = -1; 
  
         for (int i = 0; i < bookCodes.Length; i++) 
-        , 
+         
             if (bookCodes*i+ == searchCode) 
-            , 
+             
                 index = i; 
                 break; 
-            - 
-        - 
+          
  
         if (index != -1) 
             Console.WriteLine("Book found at index: " + index); 
         else 
             Console.WriteLine("Book not found"); 
-    - - 
+     
  
 Question 8:- In an academic project, you need to identify the second smallest 
 grade in a list of student grades. Develop a C# program that finds the second 
@@ -189,27 +188,24 @@ Input: int*+ grades = ,56, 78, 89, 45, 67-;
 using System; 
  
 class Program 
-, 
+
     static void Main() 
-    , 
+    
         int*+ grades = ,56, 78, 89, 45, 67-; 
  
         // Sort array using simple loop-based bubble sort 
         for (int i = 0; i < grades.Length - 1; i++) 
-        , 
+        
             for (int j = i + 1; j < grades.Length; j++) 
-            , 
+            
                 if (grades*i+ > grades*j+) 
-                , 
+                 
                     int temp = grades*i+; 
                     grades*i+ = grades*j+; 
                     grades*j+ = temp; 
-                - 
-            - 
-        - 
- 
+                
         Console.WriteLine("Second smallest grade: " + grades*1+); 
-    - - 
+   
  
 Question 9:- You are improving a system where you need to clean up 
 duplicate entries from a list of IDs. Create a C# program that removes all 
@@ -219,26 +215,24 @@ using System;
 using System.Collections.Generic; 
  
 class Program 
-, 
+
     static void Main() 
-    , 
+    
         int*+ ids = ,102, 215, 102, 324, 215-; 
         List<int> uniqueIds = new List<int>(); 
  
         for (int i = 0; i < ids.Length; i++) 
-        , 
+        
             if (!uniqueIds.Contains(ids*i+)) 
-            , 
+             
                 uniqueIds.Add(ids*i+); 
-            - 
-        - 
+            
  
         Console.WriteLine("Unique IDs:"); 
         foreach (int id in uniqueIds) 
-        , 
+         
             Console.WriteLine(id); 
-        - 
-    - - 
+        
 Question 10:- You are developing a function that finds common elements in 
 two different datasets for an analytics application. Write a C# program that 
 finds the common elements between two integer arrays using loops. 
@@ -246,23 +240,20 @@ Input: int*+ dataset1 = ,1, 2, 3, 4, 5-; int*+ dataset2 = ,3, 4, 5, 6, 7-;
 using System; 
  
 class Program 
-, 
+
     static void Main() 
-    , 
+    
         int*+ dataset1 = ,1, 2, 3, 4, 5-; 
         int*+ dataset2 = ,3, 4, 5, 6, 7-; 
- 
+
         Console.WriteLine("Common elements:"); 
         for (int i = 0; i < dataset1.Length; i++) 
-        , 
+        
             for (int j = 0; j < dataset2.Length; j++) 
-            , 
+            
                 if (dataset1*i+ == dataset2*j+) 
-                , 
+                 
                     Console.WriteLine(dataset1*i+); 
-                - 
-            - 
-        - 
-    - - 
+            
  
  
